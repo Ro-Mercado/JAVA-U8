@@ -19,7 +19,7 @@ public class Persona {
     private int edad;
     private int dni;
     private List<Perro> p=new ArrayList<>();
-
+   
     public Persona() {
     }
 

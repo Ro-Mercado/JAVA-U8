@@ -23,41 +23,9 @@ public class EJ_1_U8 {
        Perro p1 = new Perro("pancho","salchicha",5,65);
        Persona p=new Persona();
        crearPersona(p);
+      //AGREGAR PANCHO p.setP(p1);
        System.out.println(p);
-       /*public void crearPersona(){
-        System.out.print("Ingrese su nombre: ");
-        nom=leer.next();
-        System.out.print("Ingrese su apellido: ");
-        ap=leer.next();
-        System.out.print("Ingrese su edad: ");
-        edad=leer.nextInt();
-        System.out.print("Ingrese su DNI: ");
-        dni=leer.nextInt();
-        
-        System.out.println("Tiene perro? (si/no)");
-        String op=leer.next();
-        while(op.equalsIgnoreCase("si")){
-            Perro p1=new Perro();
-            p.add(p1.crearPerro());
-            System.out.println("Desea añadir otro perro?");
-            op=leer.next();
-        }
-        
-    }
        
-       public Perro crearPerro(){
-        System.out.println("Ingrese el nombre de su perro");
-        nom=leer.next();
-        System.out.println("Ingrese la raza del perro");
-        raza=leer.next();
-        System.out.println("Ingrese la edad del perro");
-        edad=leer.nextInt();
-        System.out.println("Ingrese el tamaño del perro en centímetros");
-        tam=leer.nextFloat();
-        return new Perro(nom,raza,edad,tam);
-    }
-    
-       */
     }
 
     //SUBPROCESOS O FUNCIONES
