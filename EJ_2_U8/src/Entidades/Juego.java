@@ -47,23 +47,37 @@ public class Juego {
 
     @Override
     public String toString() {
-        return "Juego{" + "jugadores=" + jugadores + ", revol=" + revol + '}';
+        return "Jugadores: " + jugadores + ", revol=" + revol + '}';
     }
      
 
      public void llenarJuego(ArrayList< Jugador >jug, RevolverDeAgua r){
          jugadores=jug;
          revol=r;
+         revol.llenarRevolver();
      }
      
      public void ronda(){
-         for (int i = 0; i < jugadores.size(); i++) {
+         boolean resp=false;
+         int i=0;
+         while(resp==false && i<jugadores.size()){
             Jugador j=jugadores.get(i);
+            System.out.println("\nTURNO DE: "+j.getNom());
+             System.out.println("Posicion actual del tambor: "+revol.getPosActual()); 
+             j.disparo(revol);
              if (j.isMojado()==true) {
-                 System.out.println("PARTIDA TERMINADA");
-                 System.out.println(""+j.getNom()+j.getId()+" se mojó.");
-                 break;
+                 System.out.println("\n>>>>>> PARTIDA TERMINADA <<<<<<");
+                 System.out.println(""+j.getNom()+" se mojó.");
+                 resp=true;
              }
+             else{
+                 System.out.println("Siguiente ronda....");
+                 i++;
+             }
+             if(i==jugadores.size()){
+                 i=0;
+             }
+         
          }
      }
  

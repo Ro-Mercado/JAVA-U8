@@ -24,7 +24,10 @@ public class EJ_1_U8 {
        Persona p=new Persona();
        crearPersona(p);
       //AGREGAR PANCHO p.setP(p1);
+       Persona pers1=new Persona();
+       crearPersona(pers1);
        System.out.println(p);
+        System.out.println(pers1);
        
     }
 

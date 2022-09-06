@@ -57,7 +57,7 @@ public class RevolverDeAgua {
         return posActual==posAgua;
     }
     public void siguienteChorro(){
-        if (posActual>=6) {
+        if (posActual>6) {
             posActual=0;
         }
         else{

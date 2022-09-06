@@ -20,6 +20,8 @@ se dispara y se moja. Las clases por hacer del juego son las siguientes:
     public static void main(String[] args) {
      ServicioJugadores sj= new ServicioJugadores();
      sj.crearJugadores();
+     sj.mostrar();
+     sj.inicioJuego();
     }
 
 }
